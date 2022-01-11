@@ -32,24 +32,15 @@
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.5"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubW-P1-48X">
-                                <rect key="frame" x="143" y="803" width="128" height="48"/>
-                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smf-XS-pOp">
+                                <rect key="frame" x="143" y="773" width="128" height="50"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.5" height="0.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="START">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="START">
-                                            <attributes>
-                                                <font key="NSFont" metaFont="system" size="30"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                    <color key="titleColor" systemColor="linkColor"/>
-                                </state>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="changeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vxu-zj-cnm"/>
+                                    <action selector="changeColorButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7d-2G-z4T"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -59,25 +50,25 @@
                             <constraint firstItem="ywV-je-whu" firstAttribute="top" secondItem="i9H-dT-q2c" secondAttribute="bottom" constant="66" id="0PA-wa-5u2"/>
                             <constraint firstItem="euJ-DA-3JX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3D4-5y-YIb"/>
                             <constraint firstItem="euJ-DA-3JX" firstAttribute="centerY" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-307" id="Abj-4i-CtM"/>
-                            <constraint firstItem="ubW-P1-48X" firstAttribute="centerX" secondItem="ywV-je-whu" secondAttribute="centerX" id="I0p-lw-cPi"/>
                             <constraint firstItem="euJ-DA-3JX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.309179" id="NGC-rx-G93"/>
                             <constraint firstItem="ywV-je-whu" firstAttribute="height" secondItem="i9H-dT-q2c" secondAttribute="height" id="T5K-Lv-yJd"/>
+                            <constraint firstItem="smf-XS-pOp" firstAttribute="width" secondItem="ywV-je-whu" secondAttribute="width" id="Wmn-GJ-TNH"/>
+                            <constraint firstItem="smf-XS-pOp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZrN-vn-Jj5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="smf-XS-pOp" secondAttribute="bottom" constant="39" id="bod-Gg-BfT"/>
                             <constraint firstItem="i9H-dT-q2c" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cpl-Cs-wrz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ubW-P1-48X" secondAttribute="bottom" constant="11" id="eLz-I6-jNv"/>
                             <constraint firstItem="ywV-je-whu" firstAttribute="centerX" secondItem="i9H-dT-q2c" secondAttribute="centerX" id="f7h-St-9dv"/>
                             <constraint firstItem="i9H-dT-q2c" firstAttribute="top" secondItem="euJ-DA-3JX" secondAttribute="bottom" constant="66" id="gSD-4m-Aae"/>
                             <constraint firstItem="euJ-DA-3JX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="38" id="iWC-V9-Kmb"/>
                             <constraint firstItem="i9H-dT-q2c" firstAttribute="height" secondItem="euJ-DA-3JX" secondAttribute="height" id="lAA-i4-tmz"/>
-                            <constraint firstItem="ubW-P1-48X" firstAttribute="width" secondItem="ywV-je-whu" secondAttribute="width" id="lFQ-Je-WwA"/>
                             <constraint firstItem="ywV-je-whu" firstAttribute="width" secondItem="i9H-dT-q2c" secondAttribute="width" id="prN-vh-Ey9"/>
-                            <constraint firstItem="ubW-P1-48X" firstAttribute="top" relation="lessThanOrEqual" secondItem="ywV-je-whu" secondAttribute="bottom" constant="205" id="q2A-0E-dnk"/>
                             <constraint firstItem="i9H-dT-q2c" firstAttribute="width" secondItem="euJ-DA-3JX" secondAttribute="width" id="qLB-Ik-ers"/>
+                            <constraint firstItem="smf-XS-pOp" firstAttribute="top" relation="lessThanOrEqual" secondItem="ywV-je-whu" secondAttribute="bottom" constant="175" id="sZI-2Q-zyN"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="greenLight" destination="ywV-je-whu" id="ZfY-Fz-26L"/>
                         <outlet property="redLight" destination="euJ-DA-3JX" id="3rD-Mb-xUB"/>
-                        <outlet property="startButton" destination="ubW-P1-48X" id="AgQ-xh-CmE"/>
+                        <outlet property="startButton" destination="smf-XS-pOp" id="bzc-4s-LCf"/>
                         <outlet property="yellowLight" destination="i9H-dT-q2c" id="Sev-7U-Gmh"/>
                     </connections>
                 </viewController>
@@ -87,17 +78,14 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="linkColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemIndigoColor">
-            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
